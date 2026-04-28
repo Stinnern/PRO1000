@@ -1,0 +1,74 @@
+.intro-box {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.2rem 1.2rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.08);
+}
+
+.intro-box h2 {
+  margin: 0 0 0.65rem;
+  color: var(--primary);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.intro-box p {
+  margin: 0 0 0.9rem;
+  color: #374151;
+}
+
+.intro-box p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-hidden {
+  margin-top: 0;
+}
+
+.intro-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: calc(100% + 2.4rem);
+  margin: 0.85rem -1.2rem -0.85rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: linear-gradient(to bottom, rgba(234, 242, 251, 0.45), rgba(234, 242, 251, 0.9));
+  color: var(--primary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.intro-toggle::after {
+  content: "↓";
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+
+.intro-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.intro-toggle:hover,
+.intro-toggle:focus-visible {
+  background: #eaf2fb;
+}
+
+@media (min-width: 720px) {
+  .intro-box {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+
+  .intro-toggle {
+    width: calc(100% + 3rem);
+    margin: 1rem -1.5rem -1rem;
+  }
+}
