@@ -1,39 +1,277 @@
-<!doctype html>
+<!-- pages/hallucinations-bias-and-misinformation.html -->
+<!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hallusinasjoner og feilinformasjon | AI Guidebook</title>
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/components.css">
-  <link rel="stylesheet" href="../styles/page.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KI-hallusinasjoner, skjevheter og feilinformasjon | AI Guidebook</title>
+
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/components.css" />
+  <link rel="stylesheet" href="../styles/page.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="../index.html">AI Guidebook</a>
-      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="site-nav"><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hovedmeny">
+      <a href="../index.html" class="logo">AI Guidebook</a>
+
+      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false">
+        <span></span>
+        
+      </button>
+
+      <nav class="site-nav" aria-label="Hovedmeny">
         <ul>
-          <li><a href="../index.html">Hjem</a></li>
           <li><a href="rules-for-ai-use.html">Regler for bruk av KI</a></li>
           <li><a class="active" href="hallucinations-bias-and-misinformation.html">Hallusinasjoner og feilinformasjon</a></li>
           <li><a href="academic-integrity-checklist.html">Akademisk integritet</a></li>
           <li><a href="privacy-and-ai.html">Personvern</a></li>
-          <li><a href="useful-ai-examples.html">Nyttig bruk</a></li>
+          <li><a href="useful-ai-examples.html">Nyttig bruk av KI</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main content-page">
-    <div class="container">
-      <h1>Hallusinasjoner og feilinformasjon</h1>
-      <p class="lead">KI kan lage svar som virker sikre og troverdige, selv når de inneholder feil. Derfor må svar alltid vurderes kritisk.</p><section class="content-box"><h2>Vær særlig obs på</h2><ul><li>Faktafeil og oppdiktede kilder.</li><li>Utdatert eller mangelfull informasjon.</li><li>Skjeve framstillinger av personer, grupper eller temaer.</li><li>Svar som mangler nyanser eller faglig begrunnelse.</li></ul></section><section class="content-box"><h2>Slik kontrollerer du svaret</h2><p>Sammenlign KI-svaret med pensum, faglige kilder og offisielle nettsider. Ikke bruk informasjon du ikke klarer å bekrefte.</p></section>
-      <a class="button-link" href="../index.html">Tilbake til forsiden</a>
-    </div>
+  <main class="container hallucinations-page">
+    <section class="page-header">
+      <h1>Kritisk bruk av KI</h1>
+      <h2>KI-hallusinasjoner, skjevheter og feilinformasjon</h2>
+      <p>
+        Når man benytter seg av KI-verktøy, er det viktig å ha i bakhodet at KI kan svare både
+        selvsikkert og overbevisende selv når det tar feil. Derfor er det viktig å forstå hvorfor
+        dette skjer, og hvordan du kan bruke KI på en kildekritisk måte.
+      </p>
+
+      <div class="source-links" aria-label="Kilder">
+        <a class="source-pill" href="https://snl.no/generativ_kunstig_intelligens" target="_blank" rel="noopener">
+          Store norske leksikon
+        </a>
+        <a class="source-pill" href="https://www.khrono.no/slik-kan-du-bli-lurt-av-kunstig-intelligens-1/944570" target="_blank" rel="noopener">
+          Khrono
+        </a>
+        <a class="source-pill" href="https://www.forskning.no/chatgpt-data-kunstig-intelligens/hvorfor-fortsetter-ki-a-finne-pa-ting-som-ikke-stemmer/2568032" target="_blank" rel="noopener">
+          Forskning.no
+        </a>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <div class="info-card">
+        <h2>Hva er en KI-hallusinasjon?</h2>
+        <p>
+          En KI-hallusinasjon er når en KI-modell genererer tekst, referanser, fakta eller annet
+          innhold som ikke stemmer overens med virkeligheten. KI-modellen forholder seg ikke til om
+          det den genererer er sant. KI-modellene er trent på store mengder data, og dermed kan
+          innholdet KI-modellen genererer fremstå som faktabasert.
+        </p>
+
+        <p class="hallucinations-source-note">
+          Kilde: Tidemann & Wold, Store norske leksikon, 2026.
+        </p>
+
+        <div class="source-links" aria-label="Kilde">
+          <a class="source-pill" href="https://snl.no/generativ_kunstig_intelligens" target="_blank" rel="noopener">
+            SNL: Generativ kunstig intelligens
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <h2>Hvorfor skjer det?</h2>
+
+      <div class="card-grid">
+        <article class="content-card">
+          <h3>Språkmodeller forutsier tekst</h3>
+          <p>
+            Språkmodeller som ChatGPT og Claude virker ved at de forutsier det mest sannsynlige neste
+            ordet i en setning. Siden modellen ikke har noen innebygd forståelse av sannhet eller
+            fakta, kan den ved mangel på tilstrekkelig data svare noe som kunne vært sant.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>Feil kan fremstå som sikre</h3>
+          <p>
+            KI-modellene kan gi feil svar med stor selvsikkerhet, og du får ikke alltid beskjed om at
+            modellen er usikker. Dette kan henge sammen med hvordan KI-modellene trenes, der de ikke
+            nødvendigvis premieres for å anerkjenne at det er noe de ikke vet.
+          </p>
+        </article>
+      </div>
+
+      <p class="hallucinations-source-note">
+        Kilder: Biørnstad, Forskning.no, 2025, og Goodwin, Khrono, 2025.
+      </p>
+
+      <div class="source-links" aria-label="Kilder">
+        <a class="source-pill" href="https://www.forskning.no/chatgpt-data-kunstig-intelligens/hvorfor-fortsetter-ki-a-finne-pa-ting-som-ikke-stemmer/2568032" target="_blank" rel="noopener">
+          Forskning.no
+        </a>
+        <a class="source-pill" href="https://www.khrono.no/slik-kan-du-bli-lurt-av-kunstig-intelligens-1/944570" target="_blank" rel="noopener">
+          Khrono
+        </a>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <div class="hallucinations-example-card">
+        <h2>Eksempel på en hallusinasjon</h2>
+        <p>
+          Tenk deg at du skriver en oppgave, men du mangler en faglig kilde i teksten. Du ber KI om
+          en kilde til en vitenskapelig artikkel. Modellen gjenkjenner hvordan kilder til
+          vitenskapelige artikler er satt opp med forfatternavn, titler, årstall og lenker.
+        </p>
+        <p>
+          Problemet oppstår når den ikke finner en referanse i treningsdataene. Da kan modellen
+          allikevel konstruere en kilde som virker overbevisende, selv om artikkelen ikke eksisterer.
+        </p>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <h2>Skjevheter og bias</h2>
+
+      <div class="info-card">
+        <p>
+          Skjevheter eller utvalgsskjevheter, på engelsk bias, oppstår når dataene KI er trent på ikke
+          representerer hele virkeligheten, men bare deler av den. Hvis treningsdataene inneholder
+          historiske eller kulturelle skjevheter, vil KI kunne gjenspeile og videreføre disse.
+        </p>
+
+        <p>
+          Et konkret eksempel er at dersom du ber KI skrive en historie om en professor og en
+          sykepleier, blir professoren gjerne fremstilt som en mann og sykepleieren som en kvinne.
+          Ikke fordi KI mener at det er riktig, men fordi det er et vanlig mønster i treningsdataene.
+        </p>
+
+        <p>
+          Vær derfor kritisk. Sjekk om svarene du får stemmer overens med virkeligheten, eller om de
+          gjenspeiler stereotypier og skjevheter.
+        </p>
+
+        <p class="hallucinations-source-note">
+          Kilder: Goodwin, Khrono, 2025, og Kommunal- og moderniseringsdepartementet, 2020.
+        </p>
+
+        <div class="source-links" aria-label="Kilder">
+          <a class="source-pill" href="https://www.khrono.no/slik-kan-du-bli-lurt-av-kunstig-intelligens-1/944570" target="_blank" rel="noopener">
+            Khrono
+          </a>
+          <a class="source-pill" href="https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/" target="_blank" rel="noopener">
+            Regjeringen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <h2>Feilinformasjon</h2>
+
+      <div class="info-card">
+        <p>
+          Generativ KI kan spre feilinformasjon i stor skala, fordi det ofte er vanskelig å skille
+          mellom hva som er produsert av en maskin og hva som er produsert av et menneske.
+          Kildekritikk er derfor viktigere enn noen gang.
+        </p>
+
+        <p>Under får du tips til hvordan du kan kontrollere svar fra KI:</p>
+
+        <ul class="hallucinations-list">
+          <li>
+            <strong>Sjekk referanser:</strong> Tenk kildekritisk, og søk opp om referansene faktisk
+            eksisterer.
+          </li>
+          <li>
+            <strong>Sammenlign med pålitelige kilder:</strong> Bruk faglige databaser, pensumlitteratur
+            eller andre troverdige kilder for å bekrefte informasjonen.
+          </li>
+          <li>
+            <strong>Ikke la KI bare bekrefte egne ideer:</strong> Still heller kritiske motspørsmål
+            og be verktøyet vise svakheter, motargumenter eller usikkerhet.
+          </li>
+          <li>
+            <strong>Bruk nyere KI-modeller:</strong> Hallusinasjoner kan forekomme sjeldnere i nyere
+            versjoner, men svarene må fortsatt kontrolleres.
+          </li>
+        </ul>
+
+        <p class="hallucinations-source-note">
+          Kilder: Goodwin, Khrono, 2025, Tidemann & Wold, SNL, 2026, og Digital Norway.
+        </p>
+
+        <div class="source-links" aria-label="Kilder">
+          <a class="source-pill" href="https://www.khrono.no/slik-kan-du-bli-lurt-av-kunstig-intelligens-1/944570" target="_blank" rel="noopener">
+            Khrono
+          </a>
+          <a class="source-pill" href="https://snl.no/generativ_kunstig_intelligens" target="_blank" rel="noopener">
+            Store norske leksikon
+          </a>
+          <a class="source-pill" href="https://digitalnorway.com/aktuelt/7-tips-for-a-unnga-ki-feilene" target="_blank" rel="noopener">
+            Digital Norway
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <div class="hallucinations-reminder-card">
+        <h2>Huskeregel</h2>
+        <p>
+          KI er et læringsverktøy. Behandle alltid KI-svar som et utgangspunkt, ikke som en fasit.
+        </p>
+      </div>
+    </section>
+
+    <section class="hallucinations-section">
+      <h2>Litteratur</h2>
+
+      <div class="info-card">
+        <p>
+          Tidemann, A. & Wold, S. (2026). <em>Generativ kunstig intelligens.</em>
+          Store norske leksikon.
+        </p>
+
+        <p>
+          Goodwin, M. (2025). <em>Slik kan du bli lurt av kunstig intelligens.</em> Khrono.
+        </p>
+
+        <p>
+          Kommunal- og moderniseringsdepartementet. (2020).
+          <em>Nasjonal strategi for kunstig intelligens.</em> Regjeringen.
+        </p>
+
+        <p>
+          Biørnstad, L. (2025, 25. oktober).
+          <em>Hvorfor fortsetter KI å finne på ting som ikke stemmer?</em> Forskning.no.
+        </p>
+
+        <p>
+          Digital Norway. <em>7 tips for å unngå KI-feilene.</em>
+        </p>
+
+        <div class="source-links" aria-label="Litteraturlenker">
+          <a class="source-pill" href="https://snl.no/generativ_kunstig_intelligens" target="_blank" rel="noopener">
+            SNL
+          </a>
+          <a class="source-pill" href="https://www.khrono.no/slik-kan-du-bli-lurt-av-kunstig-intelligens-1/944570" target="_blank" rel="noopener">
+            Khrono
+          </a>
+          <a class="source-pill" href="https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/" target="_blank" rel="noopener">
+            Regjeringen
+          </a>
+          <a class="source-pill" href="https://www.forskning.no/chatgpt-data-kunstig-intelligens/hvorfor-fortsetter-ki-a-finne-pa-ting-som-ikke-stemmer/2568032" target="_blank" rel="noopener">
+            Forskning.no
+          </a>
+          <a class="source-pill" href="https://digitalnorway.com/aktuelt/7-tips-for-a-unnga-ki-feilene" target="_blank" rel="noopener">
+            Digital Norway
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -53,6 +291,7 @@
       </nav>
     </div>
   </footer>
+
   <script src="../scripts/navigation.js"></script>
   <script src="../scripts/main.js"></script>
 </body>

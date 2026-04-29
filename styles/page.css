@@ -260,3 +260,337 @@
     font-size: 1rem;
   }
 }
+
+/* Hallucinations, bias and misinformation page */
+.hallucinations-page {
+  padding: 2.5rem 0;
+}
+
+.hallucinations-page h1 {
+  max-width: 900px;
+}
+
+.hallucinations-page h2 {
+  margin-top: 0;
+}
+
+.hallucinations-page p {
+  line-height: 1.7;
+}
+
+.hallucinations-section {
+  margin-top: 2rem;
+}
+
+.hallucinations-source-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hallucinations-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.hallucinations-list li {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.hallucinations-example-card,
+.hallucinations-reminder-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.hallucinations-example-card h2,
+.hallucinations-reminder-card h2 {
+  margin-top: 0;
+}
+
+.hallucinations-example-card p,
+.hallucinations-reminder-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hallucinations-reminder-card {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.hallucinations-reminder-card p {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+@media (min-width: 820px) {
+  .hallucinations-example-card,
+  .hallucinations-reminder-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Privacy and AI page */
+.privacy-page {
+  padding: 2.5rem 0;
+}
+
+.privacy-page h1 {
+  max-width: 900px;
+}
+
+.privacy-page h2 {
+  margin-top: 0;
+}
+
+.privacy-page p {
+  line-height: 1.7;
+}
+
+.privacy-section {
+  margin-top: 2rem;
+}
+
+.privacy-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.privacy-list li {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.privacy-reminder-card {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.privacy-reminder-card h2 {
+  margin-top: 0;
+}
+
+.privacy-reminder-card p {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+@media (min-width: 820px) {
+  .privacy-reminder-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Useful AI examples page */
+.useful-page {
+  padding: 2.5rem 0;
+}
+
+.useful-page h1 {
+  max-width: 900px;
+}
+
+.useful-page h2 {
+  margin-top: 0;
+}
+
+.useful-page p {
+  line-height: 1.7;
+}
+
+.useful-section {
+  margin-top: 2rem;
+}
+
+.useful-note-card,
+.useful-example-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.useful-note-card {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.useful-note-card h2,
+.useful-example-card h2 {
+  margin-top: 0;
+}
+
+.useful-example-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.useful-example-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.example-number {
+  display: inline-grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: var(--primary-dark);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.prompt-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.prompt-box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.prompt-box p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.prompt-box p + p {
+  margin-top: 0.75rem;
+}
+
+.useful-reminder {
+  margin-top: 1rem;
+  color: var(--text);
+  font-weight: 650;
+}
+
+@media (min-width: 820px) {
+  .useful-note-card,
+  .useful-example-card {
+    padding: 1.5rem;
+  }
+
+  .useful-example-card {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+
+/* FAQ page */
+.faq-page {
+  padding: 2.5rem 0;
+}
+
+.faq-page h1 {
+  max-width: 900px;
+}
+
+.faq-page p {
+  line-height: 1.7;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.faq-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.045);
+  overflow: hidden;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.faq-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+.faq-card details {
+  margin: 0;
+}
+
+.faq-card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 1.1rem 1.2rem;
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.faq-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg);
+  margin-top: -0.2rem;
+  flex-shrink: 0;
+  transition: transform 0.18s ease, margin 0.18s ease, border-color 0.18s ease;
+}
+
+.faq-card details[open] .faq-icon {
+  transform: rotate(225deg);
+  margin-top: 0.2rem;
+  border-color: var(--primary-dark);
+}
+
+.faq-answer {
+  padding: 0 1.2rem 1.2rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 780px;
+}
+
+.faq-answer .source-links {
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .faq-card summary {
+    padding: 1rem;
+  }
+
+  .faq-answer {
+    padding: 0 1rem 1rem;
+  }
+}

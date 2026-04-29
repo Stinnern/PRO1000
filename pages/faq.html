@@ -1,39 +1,345 @@
-<!doctype html>
+<!-- pages/faq.html -->
+<!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ | AI Guidebook</title>
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/components.css">
-  <link rel="stylesheet" href="../styles/page.css">
+
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/components.css" />
+  <link rel="stylesheet" href="../styles/page.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="../index.html">AI Guidebook</a>
-      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="site-nav"><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hovedmeny">
+      <a href="../index.html" class="logo">AI Guidebook</a>
+
+      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false">
+        <span></span>
+        
+      </button>
+
+      <nav class="site-nav" aria-label="Hovedmeny">
         <ul>
-          <li><a href="../index.html">Hjem</a></li>
           <li><a href="rules-for-ai-use.html">Regler for bruk av KI</a></li>
           <li><a href="hallucinations-bias-and-misinformation.html">Hallusinasjoner og feilinformasjon</a></li>
           <li><a href="academic-integrity-checklist.html">Akademisk integritet</a></li>
           <li><a href="privacy-and-ai.html">Personvern</a></li>
-          <li><a href="useful-ai-examples.html">Nyttig bruk</a></li>
+          <li><a href="useful-ai-examples.html">Nyttig bruk av KI</a></li>
           <li><a class="active" href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main content-page">
-    <div class="container">
+  <main class="container faq-page">
+    <section class="page-header">
       <h1>FAQ</h1>
-      <p class="lead">Her finner du korte svar på vanlige spørsmål om KI i studiesammenheng.</p><section class="content-box"><h2>Kan jeg bruke KI til alle oppgaver?</h2><p>Nei. Det avhenger av reglene for oppgaven, faget og skolen. Sjekk alltid før du bruker KI.</p></section><section class="content-box"><h2>Må jeg oppgi at jeg har brukt KI?</h2><p>Ofte ja, spesielt hvis KI har påvirket innhold, struktur eller formuleringer. Følg retningslinjene du har fått.</p></section><section class="content-box"><h2>Kan KI brukes som kilde?</h2><p>Vanligvis bør du heller bruke faglige og etterprøvbare kilder. KI kan hjelpe deg å forstå temaet, men bør ikke erstatte kilder.</p></section>
-      <a class="button-link" href="../index.html">Tilbake til forsiden</a>
-    </div>
+      
+      <p>
+        Her finner du korte svar på vanlige spørsmål om bruk av KI i skole- og studiearbeid.
+        Sjekk alltid hva som gjelder i ditt emne, på din eksamen eller ved ditt studiested.
+      </p>
+    </section>
+
+    <section class="faq-list" aria-label="Ofte stilte spørsmål om KI i studiearbeid">
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>1. Kan jeg bruke KI i skole- og studiearbeid?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Ja, ofte kan KI brukes som hjelpemiddel, men du må selv sette deg inn i hva du har lov
+              til å gjøre og hva som regnes som fusk.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://student.oslomet.no/veiledning-kunstig-intelligens-studentoppgaver" target="_blank" rel="noopener">OsloMet</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>2. Hva kan KI være nyttig til?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              KI kan være nyttig som støtte i arbeidsprosessen, for eksempel til idémyldring,
+              skrivestøtte, struktur og språklige forbedringer. Du må likevel vurdere,
+              bearbeide og stå for innholdet selv.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.uis.no/nb/studentsider/bruk-av-kunstig-intelligens-ki-ved-oppgaveskriving-og-eksamen" target="_blank" rel="noopener">UiS</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>3. Hva bør jeg ikke bruke KI til?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Du bør ikke bruke KI som erstatning for egen skriving, lesning og tenkning.
+              Innleveringer skal være ditt eget arbeid og vise din kunnskap. Derfor bør du ikke
+              levere tekst eller besvarelser som er skrevet eller utviklet av KI som om de var dine egne.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://www.usn.no/om-usn/strategi-og-visjon/retningslinjer-for-bruk-ved-eksamen-og-studentoppgaver/" target="_blank" rel="noopener">USN</a>
+              <a class="source-pill" href="https://i.ntnu.no/wiki/-/wiki/Norsk/Kunstig+intelligens+i+bachelor-+og+masteroppgaver" target="_blank" rel="noopener">NTNU</a>
+              <a class="source-pill" href="https://www.uis.no/nb/studentsider/bruk-av-kunstig-intelligens-ki-ved-oppgaveskriving-og-eksamen" target="_blank" rel="noopener">UiS</a>
+              <a class="source-pill" href="https://site.nord.no/didaktiskebetraktninger/bruk-av-samtaleroboter-som-kilde-og-som-forfatter-av-medforfatter-til-eksamensbesvarelser/" target="_blank" rel="noopener">Nord</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>4. Er det fusk å bruke KI?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Nei, det er ikke automatisk fusk å bruke KI. KI kan være tillatt som hjelpemiddel
+              dersom oppgaven, emnet eller eksamen åpner for det. Det kan derimot regnes som fusk
+              hvis du bruker KI på en måte som bryter reglene, for eksempel ved å levere KI-generert
+              innhold som ditt eget arbeid, bruke KI når det ikke er tillatt, eller ikke opplyse om
+              KI-bruk når dette kreves.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://student.oslomet.no/veiledning-kunstig-intelligens-studentoppgaver" target="_blank" rel="noopener">OsloMet</a>
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+              <a class="source-pill" href="https://i.ntnu.no/wiki/-/wiki/Norsk/Kunstig+intelligens+i+bachelor-+og+masteroppgaver" target="_blank" rel="noopener">NTNU</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>5. Hvor går grensen mellom hjelp og juks?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Grensen går mellom å bruke KI som støtte og å la KI gjøre arbeidet for deg.
+              KI kan være et hjelpemiddel når reglene tillater det, men det skal ikke erstatte
+              din egen skriving, lesning og tenkning. Du må heller ikke levere KI-generert innhold
+              som ditt eget, og du må følge krav om å opplyse om KI-bruk.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://student.oslomet.no/veiledning-kunstig-intelligens-studentoppgaver" target="_blank" rel="noopener">OsloMet</a>
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+              <a class="source-pill" href="https://www.uis.no/nb/studentsider/bruk-av-kunstig-intelligens-ki-ved-oppgaveskriving-og-eksamen" target="_blank" rel="noopener">UiS</a>
+              <a class="source-pill" href="https://www.nord.no/om/kunstig-intelligens/studenter-retningslinjer-for-bruk-av-generativ-kunstig-intelligens" target="_blank" rel="noopener">Nord</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>6. Kan KI brukes som kilde?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Nei, KI bør ikke brukes som kilde til fakta i en oppgave. Bruk heller originale og
+              faglige kilder som kan kontrolleres. Hvis KI foreslår fakta eller kilder, må du sjekke
+              dette selv før du bruker det.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://i.ntnu.no/wiki/-/wiki/Norsk/Kunstig+intelligens+i+bachelor-+og+masteroppgaver" target="_blank" rel="noopener">NTNU</a>
+              <a class="source-pill" href="https://site.nord.no/didaktiskebetraktninger/bruk-av-samtaleroboter-som-kilde-og-som-forfatter-av-medforfatter-til-eksamensbesvarelser/" target="_blank" rel="noopener">Nord</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>7. Hvorfor kan jeg ikke bare føre opp ChatGPT i litteraturlisten?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              ChatGPT er ikke en vanlig kilde til fakta. Svar fra KI kan ikke kontrolleres på samme
+              måte som bøker, artikler eller nettsider. Hvis du har brukt KI i arbeidet, bør du
+              heller forklare hvordan du har brukt verktøyet, og bruke originale kilder til fakta.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://i.ntnu.no/wiki/-/wiki/Norsk/Kunstig+intelligens+i+bachelor-+og+masteroppgaver" target="_blank" rel="noopener">NTNU</a>
+              <a class="source-pill" href="https://www.kildekompasset.no/references/kunstig-intelligens-chatgpt-writesonic-mfl/" target="_blank" rel="noopener">Kildekompasset</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>8. Hva gjør jeg hvis KI gir meg en kilde?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Hvis KI gir deg en kilde, må du sjekke at kilden faktisk finnes, og at den passer til
+              det du skal bruke den til. Les kilden selv før du bruker den i oppgaven. KI kan finne
+              på kilder eller gi kilder som ikke er relevante.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>9. Hvem har ansvaret hvis KI gir feil informasjon?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Du har ansvaret for alt innhold du leverer, uansett om du har brukt KI eller ikke.
+              Derfor må du sjekke innhold og kilder selv før du bruker dem.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>10. Må jeg opplyse om at jeg har brukt KI?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Ja, du må være åpen om hvordan du bruker KI i arbeidet ditt.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>11. Hvordan kan jeg dokumentere KI-bruk?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Du kan skrive kort hvilket KI-verktøy du brukte, hva du brukte det til, og hvordan du
+              selv kontrollerte og bearbeidet resultatet ditt.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>12. Kan jeg bruke KI til språkvask?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Ja, KI kan ofte brukes til språkvask av egenprodusert tekst.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.uia.no/studier/for-studenter/eksamen/kunstig-intelligens-i-oppgaveskriving.html" target="_blank" rel="noopener">UiA</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>13. Kan jeg bruke KI hvis jeg har dysleksi?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Ja, du kan bruke KI som språkhjelp til å rette grammatikk- og stavefeil, men arbeidet
+              må fortsatt være ditt eget.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://site.nord.no/didaktiskebetraktninger/faq-bruk-av-samtaleroboter/" target="_blank" rel="noopener">Nord</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>14. Kan jeg bruke KI til å lage disposisjon?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Ja, KI kan brukes til å utarbeide forslag til disposisjon av tekst.
+            </p>
+            <div class="source-links" aria-label="Kilde">
+              <a class="source-pill" href="https://www.uia.no/studier/for-studenter/eksamen/kunstig-intelligens-i-oppgaveskriving.html" target="_blank" rel="noopener">UiA</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="faq-card">
+        <details>
+          <summary>
+            <span>15. Hva bør jeg sjekke før jeg bruker KI i en oppgave?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Sjekk først om KI er tillatt i oppgaven eller eksamen. Les emneplanen,
+              eksamensinformasjonen og eventuelle beskjeder fra faglærer. Du bør også sjekke om du
+              må forklare hvor og hvordan KI er brukt.
+            </p>
+            <div class="source-links" aria-label="Kilder">
+              <a class="source-pill" href="https://student.oslomet.no/veiledning-kunstig-intelligens-studentoppgaver" target="_blank" rel="noopener">OsloMet</a>
+              <a class="source-pill" href="https://www.uis.no/nb/studentsider/bruk-av-kunstig-intelligens-ki-ved-oppgaveskriving-og-eksamen" target="_blank" rel="noopener">UiS</a>
+              <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">USN</a>
+              <a class="source-pill" href="https://i.ntnu.no/wiki/-/wiki/Norsk/Kunstig+intelligens+i+bachelor-+og+masteroppgaver" target="_blank" rel="noopener">NTNU</a>
+              <a class="source-pill" href="https://www.usn.no/studier/studiekvalitetsuka/bruk-av-ai-ki/" target="_blank" rel="noopener">USN studiekvalitetsuka</a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -53,7 +359,7 @@
       </nav>
     </div>
   </footer>
+
   <script src="../scripts/navigation.js"></script>
-  <script src="../scripts/main.js"></script>
 </body>
 </html>
