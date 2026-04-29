@@ -1,39 +1,288 @@
-<!doctype html>
+<!-- pages/rules-for-ai-use.html -->
+<!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Regler for bruk av KI | AI Guidebook</title>
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/components.css">
-  <link rel="stylesheet" href="../styles/page.css">
+
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/components.css" />
+  <link rel="stylesheet" href="../styles/page.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="../index.html">AI Guidebook</a>
-      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="site-nav"><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hovedmeny">
+      <a href="../index.html" class="logo">AI Guidebook</a>
+
+      <button class="nav-toggle" type="button" aria-label="Åpne meny" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Hovedmeny">
         <ul>
-          <li><a href="../index.html">Hjem</a></li>
           <li><a class="active" href="rules-for-ai-use.html">Regler for bruk av KI</a></li>
           <li><a href="hallucinations-bias-and-misinformation.html">Hallusinasjoner og feilinformasjon</a></li>
           <li><a href="academic-integrity-checklist.html">Akademisk integritet</a></li>
           <li><a href="privacy-and-ai.html">Personvern</a></li>
-          <li><a href="useful-ai-examples.html">Nyttig bruk</a></li>
+          <li><a href="useful-ai-examples.html">Nyttig bruk av KI</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main content-page">
-    <div class="container">
+  <main class="container rules-page">
+    <section class="page-header">
+      <p class="eyebrow">Regler og ansvar</p>
       <h1>Regler for bruk av KI</h1>
-      <p class="lead">Før du bruker KI i en oppgave, bør du finne ut hva som faktisk er lov i faget, emnet eller ved skolen din.</p><section class="content-box"><h2>Dette bør du sjekke</h2><ul><li>Om KI er tillatt i oppgaven.</li><li>Om du må oppgi hvordan KI er brukt.</li><li>Om KI kan brukes til idéarbeid, språkforbedring eller struktur.</li><li>Om det finnes egne krav til kildebruk, sitater eller dokumentasjon.</li></ul></section><section class="content-box"><h2>God praksis</h2><p>Bruk KI som støtte, ikke som erstatning for egen faglig forståelse. Du bør alltid kunne forklare og stå inne for innholdet du leverer.</p></section>
-      <a class="button-link" href="../index.html">Tilbake til forsiden</a>
-    </div>
+      <p>
+        KI-verktøy kan være et kraftfullt hjelpemiddel i studiene dine, men det er viktig å vite
+        hvordan og når du bruker det. Målet er ikke bare å bruke KI effektivt, men å bruke det på en
+        måte som støtter egen læring, forståelse og akademisk integritet.
+      </p>
+
+      <div class="source-links" aria-label="Kilder">
+        <a class="source-pill" href="https://hkdir.no/aktuelt/ni-av-ti-studenter-bruker-ki-men-disse-studentene-henger-etter" target="_blank" rel="noopener">
+          HK-dir
+        </a>
+        <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">
+          USN
+        </a>
+        <a class="source-pill" href="https://www.kildekompasset.no/references/kunstig-intelligens-chatgpt-writesonic-mfl/" target="_blank" rel="noopener">
+          Kildekompasset
+        </a>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <div class="info-card">
+        <h2>Har jeg lov til å bruke KI?</h2>
+        <p>
+          Ja, du har lov til å bruke KI-verktøy på lik linje med andre hjelpemidler, hvis det ikke er
+          oppgitt noen begrensninger.
+        </p>
+        <p>
+          Dette betyr at du har lov til å bruke KI som støtteverktøy når du jobber med oppgaver,
+          innleveringer eller har eksamen, når det for eksempel står «alle hjelpemidler tillatt».
+          Hvis det ikke er tillatt med KI-verktøy, skal dette stå tydelig i emneplan eller i
+          eksamensoppgaven. Sjekk alltid hva som gjelder for den enkelte eksamen eller innlevering.
+        </p>
+        <p class="rules-source-note">
+          Kilde: Dahle et al., 2025, s. 12.
+        </p>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <h2>Hva regnes som fusk?</h2>
+
+      <div class="card-grid">
+        <article class="content-card">
+          <h3>Bruk når KI ikke er tillatt</h3>
+          <p>
+            Å bruke KI når det ikke er tillatt på den aktuelle eksamen, eller å handle i strid med de
+            spesifikke reglene som gjelder for eksamen.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>Udokumentert KI-bruk</h3>
+          <p>
+            Å lime inn tekst, kode eller bilder generert av KI uten å dokumentere bruken av KI.
+            Sensor eller andre skal få opplyst at det er brukt KI.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>Falsk informasjon</h3>
+          <p>
+            Å generere falsk informasjon og dele dette, for eksempel å generere falske kilder til
+            teksten du skriver.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <h3>KI som eget arbeid</h3>
+          <p>
+            Å presentere KI-generert innhold som ditt eget arbeid. Du skal selv være forfatter av den
+            teksten du leverer.
+          </p>
+        </article>
+      </div>
+
+      <p class="rules-source-note">
+        Kilde: Dahle et al., 2025, s. 6 og s. 12.
+      </p>
+
+      <div class="source-links" aria-label="Kilder">
+        <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">
+          USN sine retningslinjer
+        </a>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <h2>Hva regnes som tillatt bruk?</h2>
+
+      <div class="info-card">
+        <p>
+          KI kan brukes som støtteverktøy i studiearbeid, så lenge bruken er i tråd med reglene for
+          oppgaven, emnet eller eksamenen.
+        </p>
+
+        <ul class="rules-list">
+          <li>KI kan brukes som støtteverktøy til å organisere og strukturere tekst.</li>
+          <li>KI kan brukes til å finne relevant faglitteratur og få forklart vanskelige begreper, men KI bør ikke brukes alene til litteratursøk.</li>
+          <li>KI kan brukes til å lage sammendrag av pensumlitteratur for din egen læring.</li>
+          <li>KI kan brukes som diskusjonspartner for idéutvikling og oppgavestruktur.</li>
+          <li>KI kan brukes til å få tilbakemeldinger på argumenter og tekst du selv har skrevet.</li>
+          <li>KI kan brukes til språkvask eller oversetting av tekst du selv har skrevet, men teksten skal fortsatt være din egen.</li>
+          <li>KI kan brukes til litteraturgjennomgang, men da er det viktig å forklare hvordan KI ble brukt.</li>
+        </ul>
+
+        <p class="rules-source-note">
+          Kilder: KI-forordningen kort fortalt, HK-dir 2026, s. 28, og USN sine retningslinjer.
+        </p>
+
+        <div class="source-links" aria-label="Kilder">
+          <a class="source-pill" href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener">
+            USN
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <h2>Hvordan henvise til KI?</h2>
+
+      <div class="info-card">
+        <p>
+          KI er ikke en vanlig kilde og skal ikke refereres til på samme måte som bøker, artikler eller
+          annen litteratur i referanselisten. Bakgrunnen for dette er at den KI-genererte teksten er
+          ulik hver gang, og det er derfor umulig for andre å finne tilbake til det samme svaret du
+          fikk. Derfor skal man beskrive hvordan man brukte KI i en fotnote eller i et eget avsnitt.
+        </p>
+
+        <p>Når du har brukt KI i en tekst, skal du beskrive følgende:</p>
+
+        <ul class="rules-list">
+          <li>Hvordan KI ble brukt.</li>
+          <li>Hvilket formål det ble benyttet til.</li>
+          <li>Hvilket KI-verktøy som ble brukt, med dato, for eksempel ChatGPT, Claude AI, Gemini eller Copilot.</li>
+          <li>Hvis man kopierer tekst fra KI-verktøy, må det markeres eksplisitt som KI-generert tekst.</li>
+          <li>I noen sammenhenger vil det også være pålagt å oppgi hvilke spørsmål som ble stilt.</li>
+        </ul>
+
+        <p class="rules-source-note">
+          Kilde: Dahle et al., 2025, s. 12.
+        </p>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <h2>Eksempler på henvisning til KI</h2>
+
+      <div class="rules-example-list">
+        <article class="rules-example-card">
+          <h3>Eksempel 1: Fotnote nederst på siden</h3>
+          <p>
+            ¹ ChatGPT (OpenAI, versjon GPT-4) ble brukt til språkvask av dette avsnittet.
+            Det faglige innholdet er skrevet av forfatteren.
+          </p>
+        </article>
+
+        <article class="rules-example-card">
+          <h3>Eksempel 2: Metodekapittel eller eget avsnitt</h3>
+          <p>
+            «I arbeidet med denne oppgaven ble ChatGPT (OpenAI) brukt til å identifisere relevante
+            fagartikler om KI-hallusinasjoner. Verktøyet ble spurt: "Hva er de viktigste akademiske
+            kildene om hallusinasjoner i store språkmodeller?" Alle foreslåtte kilder ble deretter
+            søkt opp, verifisert og lest i sin helhet før de ble inkludert i oppgaven. KI-verktøyet
+            er ikke ført i litteraturlisten.»
+          </p>
+        </article>
+
+        <article class="rules-example-card">
+          <h3>Eksempel 3.1: Henvisning i teksten</h3>
+          <p>
+            (Rettighetshaver/Firma, år)
+          </p>
+          <p>
+            Eksempel: (Anthropic, 2025)
+          </p>
+        </article>
+
+        <article class="rules-example-card">
+          <h3>Eksempel 3.2: Direkte sitert KI-tekst i besvarelsen</h3>
+          <p>
+            Ifølge KI-verktøyet ChatGPT kan hallusinasjoner oppstå fordi modellen «genererer svar
+            basert på statistiske mønstre i treningsdata, ikke basert på faktasjekk». ¹
+          </p>
+          <p>
+            ¹ Generert av ChatGPT (OpenAI, GPT-4), 15. april 2025. Teksten er ikke selvstendig
+            verifisert av forfatteren.
+          </p>
+        </article>
+
+        <article class="rules-example-card">
+          <h3>Eksempel 4: I litteraturlista</h3>
+          <p>
+            Rettighetshaver/Firma. (År). <em>Tittel på programvare</em> [Stor språkmodell]. https://url
+          </p>
+
+          <div class="source-links" aria-label="Kilde">
+            <a class="source-pill" href="https://www.kildekompasset.no/references/kunstig-intelligens-chatgpt-writesonic-mfl/" target="_blank" rel="noopener">
+              Kildekompasset
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <div class="rules-warning-card">
+        <h2>Viktig å merke seg</h2>
+        <p>
+          UHR anbefaler som hovedregel ikke at KI føres i litteraturlisten, fordi KI-generert tekst er
+          unik hver gang og ikke kan gjenfinnes av andre. I stedet skal du beskrive bruken din i et
+          eget avsnitt eller i en fotnote.
+        </p>
+        <p>
+          Et eksempel kan være: «Claude (Anthropic, 2025) ble brukt til å generere forslag til
+          innholdstekst for nettsiden. Innholdet ble deretter bearbeidet og kvalitetssikret av
+          forfatteren.»
+        </p>
+        <p>
+          USN henviser samtidig til Kildekompasset, som gir eksempler på hvordan KI kan omtales og
+          henvises til. Det kan derfor være lurt å sjekke hva som gjelder i ditt emne eller ved din
+          institusjon.
+        </p>
+      </div>
+    </section>
+
+    <section class="rules-section">
+      <h2>Litteratur og kilder brukt i teksten</h2>
+
+      <div class="info-card">
+        <p>
+          Dahle, K., Andersen, M. K., Slettum, E. L., Lysebo, M., Bjerkholt, J. T.,
+          Snekvik, A. M., Tøien, A., Knudsen, L., Wallenborg, M., & Hole, T. N. (2025).
+          <em>Fusk og samordning i universitets- og høyskolesektoren: Sluttrapport fra arbeidsgruppe
+          nedsatt av UHR.</em> Universitets- og høgskolerådet.
+        </p>
+
+        <p>
+          Direktoratet for høyere utdanning og kompetanse. (2026).
+          <em>KI-forordningen kort fortalt: Betydningen av nytt EU-regelverk om kunstig intelligens
+          for høyere utdanning og forskning</em> (Rapport nr. 04/2026). HK-dir.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -53,6 +302,7 @@
       </nav>
     </div>
   </footer>
+
   <script src="../scripts/navigation.js"></script>
   <script src="../scripts/main.js"></script>
 </body>

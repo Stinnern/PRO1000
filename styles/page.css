@@ -137,6 +137,18 @@
   max-width: 760px;
 }
 
+.integrity-checklist + .button-link {
+  margin-top: 1.5rem;
+}
+
+/* Source buttons */
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
 .source-pill {
   display: inline-flex;
   align-items: center;
@@ -158,8 +170,81 @@
   transform: translateY(-1px);
 }
 
-.integrity-checklist + .button-link {
-  margin-top: 1.5rem;
+/* Rules for AI use page */
+.rules-page {
+  padding: 2.5rem 0;
+}
+
+.rules-page h1 {
+  max-width: 850px;
+}
+
+.rules-page h2 {
+  margin-top: 0;
+}
+
+.rules-page p {
+  line-height: 1.7;
+}
+
+.rules-section {
+  margin-top: 2rem;
+}
+
+.rules-source-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.rules-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.rules-list li {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.rules-example-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.rules-example-card,
+.rules-warning-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.rules-example-card h3,
+.rules-warning-card h2 {
+  margin-top: 0;
+}
+
+.rules-example-card p,
+.rules-warning-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.rules-warning-card {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+@media (min-width: 820px) {
+  .rules-example-card,
+  .rules-warning-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 640px) {
