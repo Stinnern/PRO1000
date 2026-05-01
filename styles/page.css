@@ -613,3 +613,55 @@
     padding: 0 1rem 1rem;
   }
 }
+
+
+/* Internal next-page navigation */
+.next-page-nav {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  background: #102033;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(16, 32, 51, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.next-page-button:hover {
+  background: #172f4a;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(16, 32, 51, 0.24);
+}
+
+.next-page-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.3);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .next-page-nav {
+    justify-content: stretch;
+  }
+
+  .next-page-button {
+    width: 100%;
+  }
+}
+
+.checklist-next-page-nav {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: flex-end;
+}
